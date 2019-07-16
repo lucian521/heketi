@@ -1,10 +1,11 @@
+---
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
   name: deploy-heketi
   labels: 
     glusterfs: heketi-deployment
-        deploy-heketi: heketi-deployment
+    deploy-heketi: heketi-deployment
   annotations: description: Defines how to deploy Heketi
 spec:
   replicas: 1
